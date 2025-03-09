@@ -316,6 +316,7 @@ const loginUser = async (req, res) => {
         token,
         username: user.username,
         widgets: user.widgets,
+        user_id: user._id
       },
     });
   } catch (error) {
